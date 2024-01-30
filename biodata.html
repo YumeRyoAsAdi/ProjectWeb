@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Modern Personal Website</title>
+    <link rel="stylesheet" href="styles3.css">
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+      }
+
+      .profile-button {
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          width: 40px;
+          height: 40px;
+          background-color: #3498db; /* warna latar belakang */
+          border-radius: 50%; /* membuat lingkaran */
+          overflow: hidden;
+          cursor: pointer;
+      }
+
+      .profile-button img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      .profile-link {
+          text-decoration: none;
+          color: inherit;
+      }
+  </style>
+</head>
+<body>
+
+    <header>
+        <img src="Screenshot 2024-01-04 103112.png" alt="My Photo" width="100" height="100">
+        <h1>My Biodata</h1>
+    </header>
+
+    <nav>
+      <a href="profil.html" class="profile-link">
+        <div class="profile-button">
+            <img src="Screenshot 2024-01-04 103112.png" alt="Profile Picture">
+        </div>
+    </a>  
+        <a href="index.html"><button>Home/Index</button></a>
+    </nav>
+    <section id="biodata" class="light-section">
+        <h2>Biodata</h2>
+        <div class="biodata-content">
+            <p>Nama: Adi Muhammad</p>
+            <p>Tempat/Tanggal Lahir: Malang, 26 November 2008</p>
+            <p>Alamat: Jawa Timur, Malang, Kec.Kedungkandang.</p>
+            <p>No. Telepon: 0812-3133-9867</p>
+        </div>
+    </section>
+
+    <section id="home">
+        <h2>Home/Index</h2>
+        <p>Ini adalah halaman utama yang berisi tentang saya, download CV, dan kontak.</p>
+        <!-- Isi dengan informasi about me, link download CV, dan kontak -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adi Muhammad.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
